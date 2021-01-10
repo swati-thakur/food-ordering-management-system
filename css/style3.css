@@ -1,0 +1,318 @@
+
+
+/*------------------------------------*\
+	General
+\*------------------------------------*/
+/* --- typography --- */
+body {
+	color:#969696;
+	font-size:16px;
+	overflow-x:hidden;
+	font-family: 'Cabin', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	color:#151515;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-size:54px;
+}
+
+h2 {
+	font-size:36px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:16px;
+}
+
+a {
+	color:#151515;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
+
+a:hover,
+a:focus{
+	color:#f36700;
+    text-decoration: none;
+    outline: none;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.white-text {
+	color:#FFF;
+}
+
+/* --- Section --- */
+.section {
+	position:relative;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+.section-header .title {
+	font-family: 'Dancing Script', cursive;
+	margin-top:0px;
+}
+
+.title:after {
+	content:"";
+	display: block;
+	width: 15px;
+	height: 2px;
+	background-color: #f36700;
+	margin: 15px 0px 30px;
+}
+
+.text-center .title:after {
+	margin: 15px auto 30px;
+}
+
+.section-header .sub-title {
+	font-weight:400;
+	color: #f36700;
+}
+
+/* --- Background Image --- */
+.bg-image {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+	z-index:-1;
+}
+
+.bg-image.bg-parallax {
+	background-attachment:fixed;
+}
+
+.bg-image.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity: 0.7;
+	background-color:#000;
+}
+
+/* --- Buttons --- */
+.main-button {
+	display:inline-block;
+	padding:15px 30px;
+	border:none;
+	border-radius:40px;
+	background-color:#f36700;
+	color:#FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+.main-button:hover {
+	color:#FFF;
+	opacity:0.8;
+}
+
+/* --- Inputs --- */
+.input {
+	width: 100%;
+	height: 40px;
+	padding: 0px 10px;
+	border: 2px solid #ECECEC;
+	border-radius: 40px;
+	background: transparent;
+}
+
+textarea.input {
+	height: 160px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+
+/*------------------------------------*\
+	Reservation
+\*------------------------------------*/
+#reservation.section {
+	padding-bottom:0px;
+}
+
+#reservation .bg-image  {
+	height:75%;
+}
+
+.reserve-form {
+	padding: 30px 2% 30px;
+	background: rgba(21, 21, 21, 0.9);
+}
+
+.reserve-form  .form-group {
+	margin-bottom:30px;
+}
+
+.reserve-form  .form-group label {
+	color: #FFF;
+	margin-left: 10px;
+}
+
+.reserve-form .input {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+/*------------------------------------*\
+	Opening Time
+\*------------------------------------*/
+.opening-time {
+	padding: 40px 8% 40px;
+	background: #151515;
+	margin-top: 40px;
+}
+
+.opening-time ul li .day {
+	display:inline-block;
+	font-weight:400;
+	color:#fff;
+}
+
+.opening-time ul li .hours {
+	float: right;
+	font-size: 14px;
+	margin-top: 12px;
+	font-weight:400;
+	color:#f36500;
+}
+/* ==========================================================================
+    07. Special offers 
+========================================================================== */
+.hot-tag {
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index:15;
+    display:inline-block;
+    width:80px;
+    height:80px;
+    line-height:90px;
+    text-align:center;
+    font-weight:700;
+    color:#fff;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
+}
+.br-red {
+    background-color:#ed0121 !important;
+}
+.br-lblue {
+    background-color:#32c8de !important;
+}
+.br-green {
+    background-color:#51d466 !important;
+}
+.pricing {
+    border-top:1px solid #f1f1f1;
+}
+.pricing .pricing-item {
+    position:relative;
+    margin-top:40px;
+    margin-bottom:10px;
+}
+.pricing .pricing-item img {
+    max-width:250px;
+    float:left;
+}
+.pricing-item-details a,.pricing-item-details p,.pricing .lead {
+    color:white;
+    font-weight:bold;
+}
+.pricing .pricing-item .pricing-item-details {
+    margin-left:265px;
+}
+.pricing .pricing-item .pricing-item-details h3 {
+    margin-top:0;
+    margin-bottom:8px;
+    font-size:22px;
+}
+.pricing .pricing-item .pricing-item-details p {
+}
+.pricing .pricing-item .pricing-item-details a.btn {
+    margin-top:10px;
+}
+.pricing .pricing-item .pricing-item-details a.view-link {
+    display:inline-block;
+    margin-top:7px;
+    font-size:12px;
+    border-bottom:1px dotted #aeaeae;
+}
+.pricing .pricing-item .hot-tag {
+    top:0;
+    left:0;
+    margin-top:-15px;
+    margin-left:-15px;
+    width:55px;
+    height:55px;
+    line-height:50px;
+    font-size:23px;
+    font-weight:700;
+    border: 4px solid white;
+}
+
+/* ==========================================================================
+    05. parallax 
+========================================================================== */
+.parallax {
+    background:url(../img/parallax1.jpg) fixed no-repeat center center;
+    -webkit-background-size:/*@@prefixmycss->No equivalent*/;
+    -moz-background-size:cover;
+    -o-background-size:/*@@prefixmycss->No equivalent*/;
+    background-size:cover;
+    position:relative;
+    color:#FFF;
+}
+.parallax .inner {
+    padding-top:130px;
+    padding-bottom:130px;
+}
+.parallax.parallax2 {
+    background-image:url(../img/parallax2.jpg);
+}
+.bm10 {
+    margin-bottom:10px !important;
+}
+.facts h4 {
+    font-size:40px;
+    margin-bottom:20px;
+}
+.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6 {
+    color:#fff;
+}
+.facts p {
+    font-size:16px;
+    text-transform:uppercase;
+    margin:0;
+}
+.story .icon-wrapper i {
+    font-size:70px;
+}
+.facts i {
+    font-size: 70px;
+}
+
